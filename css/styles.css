@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;700&family=Playfair+Display&display=swap');
+:root {
+	--font-Lato: 'Lato', sans-serif;
+	--font-PlayfairDisplay: 'Playfair Display', serif;
+}
+
+* {
+	padding: 0;
+	margin: 0;
+	border: 0;
+	outline: none;
+	box-sizing: border-box;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+body, html {
+	min-height: 100%;
+	width: 100%;
+}
+
+.clear::after, .clear::before {
+	content: " ";
+	display: table;
+}
+
+.clear::after {
+	clear: both;
+}
+body{
+	font: 18px var(--font-Lato);
+	line-height: 34px;
+	letter-spacing: -.09px;
+	color: #171717;
+	font-weight: 300;
+}
+.container{
+	padding: 0 20px;
+	margin: 0 auto;
+	max-width: 1440px;
+}
+.font {
+	padding: 130px 0;
+}
+.container {
+}
+.font__item {
+	padding: 120px;
+	box-shadow: 0 0 68px 0 rgba(0, 0, 0, .1);
+}
+.font__title {
+	font: 42px var(--font-PlayfairDisplay);
+	margin-bottom: 30px;
+	font-weight: 400;
+}
+.font__text{
+	margin-bottom: 45px;
+}
+.font__text-first::first-letter{
+	font: 80px var(--font-PlayfairDisplay);
+	float: left;
+	margin: 0 25px 20px 0;
+	line-height: 80px;
+}
+.font__quote {
+	font-size: 24px;
+	font-style: italic;
+	position: relative;
+	padding-left: 45px;
+	margin-bottom: 65px;
+}
+.font__quote::before{
+	content: '"';
+	position: absolute;
+	left: 10px;
+	font-size: 60px;
+	top: 50%;
+	margin-top: -30px;
+}
+.font__btn {
+	font-weight: 700;
+	letter-spacing: 3.6px;
+	text-decoration: none;
+	text-transform: uppercase;
+	color: #eaa258;
+	padding: 20px 80px;
+	border: 2px solid #eaa258;
+	transition: all .3s ease;
+}
+.font__btn:hover{
+	color: #171717;
+	background: #eaa258;
+	border: 2px solid #171717;
+}
+/* Main Styles */
